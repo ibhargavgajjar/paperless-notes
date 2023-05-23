@@ -13,7 +13,7 @@
         align-items: center;
         padding: 10px;
         border-right: 1px solid #e2e2e2;
-        height: calc(100% - 20px);
+        height: calc(100% - 0px);
 
         .logo{
             height: 50px;
@@ -117,6 +117,120 @@
             }
         }
     }
+
+    // global css
+    input[type="text"]{
+       background-color: #fff;
+       border: 1px solid #e2e2e2;
+       border-radius: 35px;
+       padding: 10px 10px 10px 38px;
+       outline: none;
+       font-family: "circular-light";
+       font-size: 14px;
+       width: 350px;
+       &::placeholder{
+        color: #bebebe;
+       }
+    }
+    .search{
+        display: inline-block;
+        position: relative;
+        width: 15px;
+        height: 15px;
+       
+       &::before{
+        content: '';
+        position: absolute;
+        left: 26px;
+        top: -1px;
+        width: 17px;
+        height: 17px;
+        background-image: url("../../assets/images/icons/search.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+       }
+    }
+
+    .content-right{
+        width: calc(100% - 70px);
+        height: 100%;
+        margin-left: 70px;
+        nav{
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            .notes-profile{
+                display: flex;
+                margin-left: auto;
+                gap: 10px;
+                img{
+                    border: 1px solid #bebebe;
+                    border-radius: 50%;
+                    padding: 7px;
+                    width: 39px;
+                    height: 39px;
+                    cursor: pointer;
+                    &:last-of-type{
+                        padding: 1px;
+                    }
+                }
+            }
+        }
+        section.home{
+            padding: 10px 30px 10px 45px;
+            height: calc(100% - 69px);
+            .title-home{
+                font-size: 42px;
+                font-family: 'circular-black';
+                margin: 22px 0 50px 0;
+            }
+            .cards-parent{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                padding-right: 15px;
+                height: calc(100% - 125px);
+                overflow: auto;
+                .cards-custom{
+                    height: 250px;
+                    width: calc(100% / 3 - 20px);
+                    border-radius: 15px;
+                    padding: 15px;
+                    background-color: #e8e8e8;
+                    transition: 0.5s all;
+                    cursor: pointer;
+                    &:hover{
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        transition: 0.5s all;
+                    }
+                    &.color-1{
+                        background-color: #fec871;
+                    }
+                    &.color-2{
+                        background-color: #fe9b70;
+                    }
+                    &.color-3{
+                        background-color: #b592fd;
+                    }
+                    &.color-4{
+                        background-color: #00d4fe;
+                    }
+                    &.color-5{
+                        background-color: #e3ee8e;
+                    }
+
+                    p{
+                        font-family: "poppins";
+                        font-weight: 400;
+                        font-size: 16px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
 .my-node-enter {
     opacity: 0;

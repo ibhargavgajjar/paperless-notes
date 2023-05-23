@@ -19,14 +19,18 @@
 @font-face {
   font-family: "circular-black";
   font-weight: normal;
-  src: url("../src/assets/fonts/circular/CircularStd-Black.otf")
+  src: url("../src/assets/fonts/circular/CircularStd-Bold.otf")
     format("opentype");
 }
 @font-face {
   font-family: "circular-bold";
   font-weight: normal;
-  src: url("../src/assets/fonts/circular/CircularStd-Bold.otf")
+  src: url("../src/assets/fonts/circular/CircularStd-Black.otf")
     format("opentype");
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
